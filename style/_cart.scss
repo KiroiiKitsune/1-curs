@@ -1,0 +1,227 @@
+@keyframes bay {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 100%;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}
+.top-cart {
+    height: 400px;
+    background-image: url(../img/Top-cart.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-cart {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 128px;
+    font-style: normal;
+    color: #FFFFFF;
+}
+
+/* product */
+.product__heading_cart {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+
+}
+.product__text_cart {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #888888;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+   
+    &_name_box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 12px;
+       
+    }
+    &_item {
+        border-top: 0.5px solid #CACDD8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &_number {
+        background: #F7F6F6;
+        border-radius: 6px;
+        width: 71px;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        border: 1px solid #F7F6F6
+    }
+    &_number::-webkit-inner-spin-button{
+        opacity: 1;
+    }
+    &_left {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+
+    &_info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+    &_link_box {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        
+    }
+    &_link {
+        line-height: 210%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        text-decoration-line: underline;
+        color: #000000;
+    }
+    &_link:hover {
+        color: #CACDD8;
+        text-decoration-line: none;
+    }
+    &_form_box {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        padding-top: 35px;
+    }
+    &_form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+        grid-column: span 4;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        padding-top: 44px;
+        flex-wrap: wrap;
+        width: 379px;
+        &_data {
+            outline: none;
+            width: 288px;
+            border: none;
+            border-bottom: 1px solid #CACDD8;
+            background: #F7F6F6;
+            gap: 44px;
+            
+             }
+             &_bay {
+                background: #F7F6F6;
+                border: 1px solid #000000;
+                box-sizing: border-box;
+                border-radius: 20px;
+                width: 275px;
+                height: 46px;
+                font-size: 15px;
+                line-height: 18px;
+                color: #000000;
+                margin-top: 24px;
+                transition: all 1s;
+             }
+             &_bay:hover {
+                background: black;
+                color: white;
+                animation: bay 2s ease-in 0.5s 1 reverse backwards;
+             }
+             &_data::placeholder {
+                color: #000000;
+             }
+          
+    }
+    &__product_price {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #050505;
+
+    }
+    &_total_price {
+        padding-top: 68px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        color: #000000;
+    }
+    
+    &_content {
+        grid-column: span 8;
+        width: 786px;
+        
+        }
+        
+    &_buttom {
+        width: 200px;
+        height: 37px;
+        border: 1px solid #000000;
+        border-radius: 50px;
+        background: white;
+        transition: all 1.05s;
+        margin-top: 19px;
+}
+    &_buttom:hover {
+        background-color: black;
+        color: white;
+}
+}
+
+
+
+       
